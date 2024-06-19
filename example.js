@@ -10,6 +10,7 @@ d3.csv("data/purchase_orders.csv")
         .text(`${order.customerName} - Order ID: ${order.orderId} - Purchase Amount: ${order.purchaseAmount}`);
     });
   })
+  //Finalize data display functionality to have no errors.
   .catch(error => {
     console.error("Error loading data:", error);
   });
